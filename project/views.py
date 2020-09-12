@@ -11,6 +11,10 @@ from django.contrib.auth import (
 )
 User = get_user_model()
 
+def homePage(request):
+    context = {'loggedin': request.user.is_authenticated}
+    return render(request, 'home.html', context)
+
 # Create your views here.
 @login_required(login_url='userLoginPage')
 def playRecipe(request, pk):
