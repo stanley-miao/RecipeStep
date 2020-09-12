@@ -25,7 +25,7 @@ SECRET_KEY = '+2%@0s-844o5f)lf)71^=&=(8*f)nwg1v4)p5+%#b7=x!cj%hj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['williamxu.pythonanywhere.com']
+ALLOWED_HOSTS = ['williamxu.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
@@ -121,3 +121,6 @@ USE_TZ = True
 
 AUTH_USER_MODEL='project.Account'
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)

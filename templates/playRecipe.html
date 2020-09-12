@@ -1,12 +1,51 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>Recipe</title>#}
+{#</head>#}
+{#<body>#}
+{#    <h1>{{ recipe.recipe_name }}</h1>#}
+{#    <p1>{{ recipe.recipe_steps }}</p1>#}
+{#    <a href="{% url 'userDashBoard' %}">Back to DashBoard</a>#}
+{#</body>#}
+{#</html>#}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Recipe</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slideshow Demo</title>
+  <link rel="stylesheet" href="{% static 'index.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
-<body>
-    <h1>{{ recipe.recipe_name }}</h1>
-    <p1>{{ recipe.recipe_steps }}</p1>
-    <a href="{% url 'userDashBoard' %}">Back to DashBoard</a>
+<body onload="storeRecipe(`{{ recipe.recipe_steps }}`); separateSentences();">
+{#  <section class="user-input">#}
+{#      <label for="recipe-input"></label><textarea name="recipe" id="recipe-input" cols="30" rows="10" placeholder="What are you feeling?"></textarea>#}
+{#    <div id="submit-btn-container">#}
+{#      <button id="submit">Submit</button>#}
+{#    </div>#}
+{#  </section>#}
+<div class="close">
+    <a href="{% url 'userDashBoard' %}"><i class="fas fa-times fa-2x"></i></a>
+</div>
+  <main class="slideshow">
+    <button id="back-btn">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <div id="slide">
+      <h1></h1>
+    </div>
+    <button id="next-btn">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </main>
+    <div id="progress" class="progressview">
+        <h1></h1>
+    </div>
+  <script src="{% static 'stepslider.js' %}">
+
+  </script>
 </body>
 </html>

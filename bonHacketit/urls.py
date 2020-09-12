@@ -27,5 +27,5 @@ urlpatterns = [
     path('edit/<str:pk>', editRecipe, name="editRecipe"),
     path('delete/<str:pk>', deleteRecipe, name="deleteRecipe"),
     path('play/<str:pk>', playRecipe, name="playRecipe"),
-    path('/', homePage, name="homePage")
+    path('', homePage, name="homePage")
 ]
