@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DashBoard</title>
+</head>
+<body>
+<a href = "{% url 'createRecipe' %}">Create Recipe</a>
+<table>
+    {% for recipe in queryset %}
+        <tr>
+            <td>{{ recipe.recipe_name }}</td>
+            <td>{{ recipe.frequency }}</td>
+            <td>{{ recipe.last_used }}</td>
+            <td><a href="{% url 'playRecipe' recipe.id %}">Lets Make This</a></td>
+            <td><a href="{% url 'editRecipe' recipe.id %}">Edit Recipe</a></td>
+            <td><a onclick="return confirm('Are you sure you want to delete {{ recipe.recipe_name }}?')" href="{% url 'deleteRecipe' recipe.id%}">Delete Recipe</a></td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
