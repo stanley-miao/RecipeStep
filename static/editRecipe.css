@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #5cdb95;
+}
+
+a {
+  color: #05386b;
+}
+
+a:hover {
+  color: #edf5e1;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 6vh;
+  text-align: center;
+  padding-top: .5rem;
+  background-color: #05386b;
+  color: #edf5e1;
+}
+
+form {
+  margin: 2rem 3rem;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+  padding: 1rem;
+}
+
+form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 2px solid #05386b;
+  width: 100%;
+  margin: 1rem;
+}
+
+form button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #05386b;
+  color: #edf5e1;
+  border: 2px solid #edf5e1;
+}
+
+form button:hover {
+  background-color: #edf5e1;
+  color: #05386b;
+  border: 2px solid #05386b;
+}
+
+a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6vh;
+  text-align: center;
+  padding-top: .5rem;
+  background-color: #05386b;
+  color: #edf5e1;
+}
+/*# sourceMappingURL=editRecipe.css.map */

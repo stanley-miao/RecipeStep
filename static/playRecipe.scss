@@ -1,0 +1,38 @@
+@import "./boilerplate";
+@import "./footer";
+
+$light-green: #5cdb95;
+$muted-green: #8ee4af;
+$light-yellow: #edf5e1;
+$dark-green: #379683;
+$navy-blue: #05386b;
+
+a{
+  @include flex(flex-start, center, row);
+  text-decoration: none;
+  margin: 1.5rem;
+}
+
+button{
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: $navy-blue;
+  color: $light-yellow;
+  border: 2px solid $light-yellow;
+
+  &:hover{
+    background-color: $light-yellow;
+    color: $navy-blue;
+    border: 2px solid $navy-blue;
+  }
+}
+
+textarea{
+  font-family: Poppins, sans-serif;
+  font-size: 1.2rem;
+}
+
+#slide{
+  background-color: $muted-green;
+}
+

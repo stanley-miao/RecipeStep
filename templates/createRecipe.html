@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Create Recipe</title>
+    <link rel="stylesheet" href="../static/editRecipe.css">
 </head>
 <body>
     <form method ="POST" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{form.as_p}}
-        <button>Create Recipe</button>
+        <div class="create">
+            {% csrf_token %}
+            {{form.as_p}}
+        </div>
+        <button class="btn">Create Recipe</button>
     </form>
-<a href="{% url 'userDashBoard' %}">Back to DashBoard</a>
+<a href="{% url 'userDashBoard' %}" class="back-link">Back to DashBoard</a>
 </body>
 </html>

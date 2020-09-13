@@ -22,14 +22,6 @@ body {
           flex-direction: column;
 }
 
-a{
-    color: black;
-}
-
-a:hover {
-    color: grey;
-}
-
 .user-input {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,13 +84,5 @@ a:hover {
 
 .slideshow button {
   padding: 1rem;
-}
-
-.progressview {
-    text-align: center;
-}
-
-.close {
-    margin: 1rem;
 }
 /*# sourceMappingURL=index.css.map */

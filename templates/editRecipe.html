@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Edit Recipe</title>
+    <link rel="stylesheet" href="../static/editRecipe.css">
 </head>
 <body>
     <form method ="POST" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{form.as_p}}
+        <div>
+            {% csrf_token %}
+            {{form.as_p}}
+        </div>
         <button>Edit Recipe</button>
     </form>
-<a href="{% url 'userDashBoard' %}">Back to DashBoard</a>
+    <a href="{% url 'userDashBoard' %}">Back to DashBoard</a>
+    
+    <footer>
+        <p>Love from William, Le Kang, Stanley, Khushwant &copy 2020</p>
+    </footer>
 </body>
 </html>

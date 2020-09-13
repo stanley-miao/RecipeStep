@@ -1,10 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-</body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Recipe Step</title>
+    <link rel="stylesheet" href="../static/cover.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+        <div class="container">
+        <a class="navbar-brand" href="{% url 'homePage' %}" style="font-family: 'Cedarville Cursive', cursive; font-size: 2rem">Recipe Step</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'homePage' %}">Home
+                    <span class="sr-only">(current)</span>
+                    </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'userLoginPage' %}">Login/Register</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <header class="masthead">
+        <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+            <h1 class="font-weight-light" style="font-size: 4rem;">Keep Organized.</h1>
+            <p class="lead">Let's make cooking <span><em>fun</em></span> again!</p>
+            </div>
+        </div>
+        </div>
+    </header>
+    
+    <!-- Page Content -->
+    <section class="py-5">
+        <div class="container">
+        <h2 class="font-weight-light">About Recipe Step</h2>
+        <p>RecipeStep is a web application that allows users to easily run through the steps of their recipes in a presentable format. RecipeStep works to cut down on screen clutter when following a recipe by only presenting one step at a time.
+            To get started, you can create an account by selecting “log in” and “create an account.” By entering in the required information and clicking submit, you can access your dashboard. To add a recipe, click the “add recipe” button and enter in a recipe name. Then, you can directly copy and paste your recipe from any website into the recipe box. Press “enter,” and you’ve added your recipe! Simple, right?</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Love from William, Le Kang, Stanley, Khushwant &copy 2020</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>

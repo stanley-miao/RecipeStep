@@ -122,5 +122,5 @@ USE_TZ = True
 AUTH_USER_MODEL='project.Account'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "/home/williamxu/RecipeStep/static"),
+    os.path.join(BASE_DIR, "static"),
 )

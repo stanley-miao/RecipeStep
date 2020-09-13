@@ -1,0 +1,84 @@
+@import "./boilerplate";
+@import "./footer";
+
+$light-green: #5cdb95;
+$muted-green: #8ee4af;
+$light-yellow: #edf5e1;
+$dark-green: #379683;
+$navy-blue: #05386b;
+
+a{
+  @include flex(center, center, row);
+  text-decoration: none;
+}
+
+body{
+  overflow-x: hidden;
+  @include flex(center, center, column);
+}
+
+.x-sign{
+  align-self: flex-start;
+  margin: 2rem;
+}
+
+.create-link{
+  height: 7rem;
+  width: 100vw;
+  @include flex(center, center, row);
+  .create{
+    font-size: 2rem;
+    i{
+      margin-right: 1rem;
+    }
+  
+    &:hover{
+      transform: scale(1.1);
+      transition: transform .2s ease-in-out;
+    }
+  }
+}
+
+.recipe{
+  padding: 2rem;
+  height: 15rem;
+  width: 100vw;
+  @include flex(center, center, row);
+  h1{
+    font-size: 4rem;
+  }
+}
+
+.card{
+  background-color: $light-yellow;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: $navy-blue;
+  @include flex(space-around, center, column);
+
+  &:hover{
+    background: $navy-blue;
+    border: 2px solid $light-yellow;
+    color: $light-yellow;
+    transition: color .5s ease-in-out;
+    transition: background-color .1s ease-in-out;
+    a{
+      color: $light-yellow;
+    }
+  }
+}
+
+.other-info{
+  @include flex(space-around, center, row);
+  width: 30%;
+}
+
+.links{
+  @include flex(space-around, center, row);
+  width: 50%;
+}
+
+.spacing{
+  height: 10rem;
+}

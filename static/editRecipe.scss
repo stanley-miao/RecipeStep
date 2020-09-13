@@ -1,0 +1,52 @@
+@import "./boilerplate";
+@import "./footer";
+
+$light-green: #5cdb95;
+$muted-green: #8ee4af;
+$light-yellow: #edf5e1;
+$dark-green: #379683;
+$navy-blue: #05386b;
+
+form{
+  margin: 2rem 3rem;
+  border: 2px solid black;
+  @include flex(space-around, center, column);
+  height: 80vh;
+  padding: 1rem;
+  div{
+    @include flex(space-around, center, column);
+    flex: 1;
+    border: 2px solid $navy-blue;
+    width: 100%;
+    margin: 1rem;
+  } 
+  button{
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: $navy-blue;
+    color: $light-yellow;
+    border: 2px solid $light-yellow;
+
+    &:hover{
+      background-color: $light-yellow;
+      color: $navy-blue;
+      border: 2px solid $navy-blue;
+    }
+  }
+}
+
+a{
+  @include flex(center, center, row);
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6vh;
+  text-align: center;
+  padding-top: .5rem;
+  background-color: $navy-blue;
+  color: $light-yellow;
+}

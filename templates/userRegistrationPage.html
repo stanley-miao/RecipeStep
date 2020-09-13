@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Registration</title>
+    <link rel="stylesheet" href="../static/account.css">
 </head>
 <body>
-    <form method ="POST" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{form.as_p}}
-        <button>Register</button>
-    </form>
-    <a href="{% url 'userLoginPage' %}">Have An Account?</a>
+    <div class="side-img-1">
+        <img src="https://i.imgur.com/qlLKwVJ.jpg" alt="">
+    </div>
+    <div class="account">
+        <div>
+            <form method ="POST" enctype="multipart/form-data">
+                <div>
+                    {% csrf_token %}
+                    {{form.as_p}}
+                </div>
+                <button>Register</button>
+            </form>
+            <a href="{% url 'userLoginPage' %}">Already Have An Account?</a>
+        </div>
+    </div>
 </body>
 </html>

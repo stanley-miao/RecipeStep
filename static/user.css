@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #5cdb95;
+}
+
+a {
+  color: #05386b;
+}
+
+a:hover {
+  color: #edf5e1;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 6vh;
+  text-align: center;
+  padding-top: .5rem;
+  background-color: #05386b;
+  color: #edf5e1;
+}
+
+a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.x-sign {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 2rem;
+}
+
+.create-link {
+  height: 7rem;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.create-link .create {
+  font-size: 2rem;
+}
+
+.create-link .create i {
+  margin-right: 1rem;
+}
+
+.create-link .create:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.recipe {
+  padding: 2rem;
+  height: 15rem;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.recipe h1 {
+  font-size: 4rem;
+}
+
+.card {
+  background-color: #edf5e1;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #05386b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card:hover {
+  background: #05386b;
+  border: 2px solid #edf5e1;
+  color: #edf5e1;
+  -webkit-transition: color .5s ease-in-out;
+  transition: color .5s ease-in-out;
+  -webkit-transition: background-color .1s ease-in-out;
+  transition: background-color .1s ease-in-out;
+}
+
+.card:hover a {
+  color: #edf5e1;
+}
+
+.other-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 30%;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+}
+
+.spacing {
+  height: 10rem;
+}
+/*# sourceMappingURL=user.css.map */

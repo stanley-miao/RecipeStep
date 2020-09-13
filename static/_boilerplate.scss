@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+$light-green: #5cdb95;
+$muted-green: #8ee4af;
+$light-yellow: #edf5e1;
+$dark-green: #379683;
+$navy-blue: #05386b;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background-color: $light-green;
+}
+
+a{
+  color: $navy-blue;
+}
+
+a:hover{
+  color: $light-yellow;
+}
+

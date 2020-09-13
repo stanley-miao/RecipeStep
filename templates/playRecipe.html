@@ -17,7 +17,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Slideshow Demo</title>
-  <link rel="stylesheet" href="{% static 'index.css' %}">
+  <!-- <link rel="stylesheet" href="{% static 'index.css' %}"> -->
+  <link rel="stylesheet" href="../static/index.css">
+  <link rel="stylesheet" href="../static/playRecipe.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 <body onload="storeRecipe(`{{ recipe.recipe_steps }}`); separateSentences();">
@@ -30,22 +32,23 @@
 <div class="close">
     <a href="{% url 'userDashBoard' %}"><i class="fas fa-times fa-2x"></i></a>
 </div>
-  <main class="slideshow">
-    <button id="back-btn">
-      <i class="fas fa-chevron-left"></i>
-    </button>
-    <div id="slide">
-      <h1></h1>
-    </div>
-    <button id="next-btn">
-      <i class="fas fa-chevron-right"></i>
-    </button>
-  </main>
-    <div id="progress" class="progressview">
-        <h1></h1>
-    </div>
-  <script src="{% static 'stepslider.js' %}">
-
-  </script>
+<main class="slideshow">
+  <button id="back-btn">
+    <i class="fas fa-chevron-left"></i>
+  </button>
+  <div id="slide">
+    <h1></h1>
+  </div>
+  <button id="next-btn">
+    <i class="fas fa-chevron-right"></i>
+  </button>
+</main>
+<div id="progress" class="progressview">
+    <h1></h1>
+</div>
+<footer>
+  <p>Love from William, Le Kang, Stanley, Khushwant &copy 2020</p>
+</footer>
+<script src="{% static 'stepslider.js' %}"></script>
 </body>
 </html>

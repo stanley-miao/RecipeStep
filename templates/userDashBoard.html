@@ -2,21 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>DashBoard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Your Dashboard</title>
+    <link rel="stylesheet" href="../static/user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 <body>
-<a href = "{% url 'createRecipe' %}">Create Recipe</a>
-<table>
-    {% for recipe in queryset %}
-        <tr>
-            <td>{{ recipe.recipe_name }}</td>
-            <td>{{ recipe.frequency }}</td>
-            <td>{{ recipe.last_used }}</td>
-            <td><a href="{% url 'playRecipe' recipe.id %}">Lets Make This</a></td>
-            <td><a href="{% url 'editRecipe' recipe.id %}">Edit Recipe</a></td>
-            <td><a onclick="return confirm('Are you sure you want to delete {{ recipe.recipe_name }}?')" href="{% url 'deleteRecipe' recipe.id%}">Delete Recipe</a></td>
-        </tr>
-    {% endfor %}
-</table>
+    <div class="x-sign">
+        <a href="../templates/home.html">
+            <i class="fas fa-times fa-2x"></i>
+        </a>
+    </div>
+    <div class="create-link">
+        <a href = "{% url 'createRecipe' %}" class="create">
+            <i class="fas fa-plus"></i>Create Recipe</a>
+    </div>
+    <section class="recipe">
+        <div class="card">
+            {% for recipe in queryset %}
+            <h1> {{ recipe.recipe_name }}</h1>
+            <div class="other-info">
+                <p> Frequency: {{ recipe.frequency }} </p>
+                <p> Last used: {{ recipe.last_used }} </p>
+            </div>
+            <div class="links">
+                <a href="{% url 'playRecipe' recipe.id %}"><h2>Let's Make This!</h2></a>
+                <a href="{% url 'editRecipe' recipe.id %}"><h2>Edit Recipe</h2></a>
+                <a onclick="return confirm('Are you sure you want to delete {{ recipe.recipe_name }}?')" href="{% url 'deleteRecipe' recipe.id%}"><h2>Delete Recipe</h2></a>
+            </div>
+            {% endfor %}
+        <div>
+    </section>
+    <section class="spacing"></section>
+    <footer>
+        <p>Love from William, Le Kang, Stanley, Khushwant &copy 2020</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
